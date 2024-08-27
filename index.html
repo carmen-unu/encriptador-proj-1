@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>¡Encriptador de texto!</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine&family=EB+Garamond&family=GFS+Didot&family=Montserrat&family=Nunito&family=Playpen+Sans&family=Source+Code+Pro&family=Space+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   
+    <section class="hero ">
+      <div class="hero-principal">
+        <h1>Encriptador de texto</h1>
+
+        <!--Animación con JavaScript-->
+        <h2 class="text-primary mb-4" id="typewriter"></h2>
+      </div>
+      <div class="hero-inferior">
+      </div>
+    </section>
+
+ <main>
+    <section class="seccion-clara">
+
+          <section class="sect">
+            <textarea class="area_texto" cols="30" rows="10" placeholder="ingrese su texto"></textarea>
+            <div>
+                <h6 class="informacion">Sólo letras minúsculas.</h6>
+            </div>
+            <div class="boton">
+                <button class="btn" onclick="encriptarBut()">Encriptar</button>
+                <button class="btn" onclick="desencriptarBut()">Desencriptar</button>
+            </div>
+
+        </section>
+        <section class="sect">
+          <textarea class="mensaje" cols="30" rows="10" ></textarea>
+          <div>
+              <button class="copiar" onclick="copiar()">Copiar</button>
+          </div>
+      </section>
+
+    </section>
+  </main>
+    <footer class="seccion-oscura"> 
+      <div class="autor">Creado por Carmen García (2024)</div>
+    </footer>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
